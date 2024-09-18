@@ -8,12 +8,12 @@ def is_even(digit):
     return result
 
 def is_even(digit):
-    last_digit = [0, 2, 4, 6, 8]
+    valide_last_digit = [0, 2, 4, 6, 8]
     lst = list(str(digit))
-    return int(lst[-1]) in last_digit
+    return int(lst[-1]) in valide_last_digit
     # Або такий варіант, тоді не доведеться створювати змінну lst
     # але код стає менш читабельним
-    # return int(list(str(digit))[-1]) in last_digit
+    # return int(list(str(digit))[-1]) in valide_last_digit
 
 
 assert is_even(2494563894038**2) == True, 'Test1'
